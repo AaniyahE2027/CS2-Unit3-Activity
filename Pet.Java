@@ -9,10 +9,10 @@ public class Pet {
     
      // 2. Define CONSTRUCTOR
      public Pet(String n, String t, int a){
-        this.name = "n";
+        this.name = n;
         this.age = a;
         this.weight = 10.0;
-        this.type = "French BullDog";
+        this.type = t;
         this.isSterile = true;
         this.gender = "girl";
     }
@@ -20,27 +20,27 @@ public class Pet {
 
     //(getters)
     public String getName (){
-        return type;
+        return name;
     }
-    public String getAge (){
-        return type;
+    public int getAge (){
+        return age;
     }
     public double getWeight (){
-        return type;
+        return weight;
     }
     public String getType (){
         return type;
     }
     public boolean getIsSterile (){
-        return type;
+        return isSterile;
     }
     public String getGender (){
-        return type;
+        return gender;
     }
 
     // toString
     public String toString (){
-        "Pet[" + name + "," + age + "," + weight + "," + type + "]";
+        String state = "Pet[" + name + "," + age + "," + weight + "," + type + "]";
         return state;
     }
 
@@ -49,7 +49,7 @@ public class Pet {
         this.name = newName;
     }
     public void setAge (int newAge){
-        this.name = newAge;
+        this.age = newAge;
     }
     public void setWeight (double newWeight){
         this.weight = newWeight;
@@ -58,7 +58,7 @@ public class Pet {
         this.type = newType;
     }
     public void setIsSterile (boolean newIsSterile){
-        this.isStrile = newIsStrile;
+        this.isSterile = newIsSterile;
     }
     public void setGender (String newGender){
         this.gender = newGender;
